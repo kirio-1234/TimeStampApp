@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D2142732B4873EF00D38436 /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142722B4873EF00D38436 /* TimeStampRepository.swift */; };
+		6D21427D2B49132700D38436 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D21427C2B49132700D38436 /* WidgetKit.framework */; };
+		6D21427F2B49132700D38436 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D21427E2B49132700D38436 /* SwiftUI.framework */; };
+		6D2142822B49132700D38436 /* TimeStampWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142812B49132700D38436 /* TimeStampWidgetBundle.swift */; };
+		6D2142842B49132700D38436 /* TimeStampWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142832B49132700D38436 /* TimeStampWidgetLiveActivity.swift */; };
+		6D2142862B49132700D38436 /* TimeStampWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142852B49132700D38436 /* TimeStampWidget.swift */; };
+		6D2142882B49132700D38436 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142872B49132700D38436 /* AppIntent.swift */; };
+		6D21428A2B49132A00D38436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2142892B49132A00D38436 /* Assets.xcassets */; };
+		6D21428E2B49132A00D38436 /* TimeStampWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D2142952B4AB37F00D38436 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142942B4AB37F00D38436 /* Date+Extension.swift */; };
+		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
+		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
+		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
+		6DD6E0842B484B8200351D0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0832B484B8200351D0B /* Preview Assets.xcassets */; };
+		6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08A2B484DF900351D0B /* TimeStampList.swift */; };
+		6DD6E08D2B484E3100351D0B /* TimeStampListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */; };
+		6DD6E08F2B484E9A00351D0B /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08E2B484E9A00351D0B /* TimeStamp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D21428C2B49132A00D38436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD6E0712B484B6E00351D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D2142792B49132700D38436;
+			remoteInfo = TimeStampWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D2142922B49132A00D38436 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D21428E2B49132A00D38436 /* TimeStampWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D2142722B4873EF00D38436 /* TimeStampRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampRepository.swift; sourceTree = "<group>"; };
+		6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeStampWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D21427C2B49132700D38436 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6D21427E2B49132700D38436 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6D2142812B49132700D38436 /* TimeStampWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampWidgetBundle.swift; sourceTree = "<group>"; };
+		6D2142832B49132700D38436 /* TimeStampWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		6D2142852B49132700D38436 /* TimeStampWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampWidget.swift; sourceTree = "<group>"; };
+		6D2142872B49132700D38436 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		6D2142892B49132A00D38436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D21428B2B49132A00D38436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2142932B4A9EAB00D38436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6D2142942B4AB37F00D38436 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
+		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6DD6E0802B484B8200351D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DD6E0832B484B8200351D0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DD6E08A2B484DF900351D0B /* TimeStampList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampList.swift; sourceTree = "<group>"; };
+		6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampListViewModel.swift; sourceTree = "<group>"; };
+		6DD6E08E2B484E9A00351D0B /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D2142772B49132700D38436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D21427F2B49132700D38436 /* SwiftUI.framework in Frameworks */,
+				6D21427D2B49132700D38436 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD6E0762B484B6E00351D0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D21427B2B49132700D38436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D21427C2B49132700D38436 /* WidgetKit.framework */,
+				6D21427E2B49132700D38436 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D2142802B49132700D38436 /* TimeStampWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6D2142812B49132700D38436 /* TimeStampWidgetBundle.swift */,
+				6D2142832B49132700D38436 /* TimeStampWidgetLiveActivity.swift */,
+				6D2142852B49132700D38436 /* TimeStampWidget.swift */,
+				6D2142872B49132700D38436 /* AppIntent.swift */,
+				6D2142892B49132A00D38436 /* Assets.xcassets */,
+				6D21428B2B49132A00D38436 /* Info.plist */,
+			);
+			path = TimeStampWidget;
+			sourceTree = "<group>";
+		};
+		6DD6E0702B484B6E00351D0B = {
+			isa = PBXGroup;
+			children = (
+				6DD6E07B2B484B6E00351D0B /* TimeStampApp */,
+				6D2142802B49132700D38436 /* TimeStampWidget */,
+				6D21427B2B49132700D38436 /* Frameworks */,
+				6DD6E07A2B484B6E00351D0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DD6E07A2B484B6E00351D0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DD6E0792B484B6E00351D0B /* TimeStampApp.app */,
+				6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DD6E07B2B484B6E00351D0B /* TimeStampApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D2142932B4A9EAB00D38436 /* Info.plist */,
+				6D2142942B4AB37F00D38436 /* Date+Extension.swift */,
+				6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */,
+				6DD6E07E2B484B6E00351D0B /* ContentView.swift */,
+				6DD6E08A2B484DF900351D0B /* TimeStampList.swift */,
+				6DD6E08E2B484E9A00351D0B /* TimeStamp.swift */,
+				6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */,
+				6D2142722B4873EF00D38436 /* TimeStampRepository.swift */,
+				6DD6E0802B484B8200351D0B /* Assets.xcassets */,
+				6DD6E0822B484B8200351D0B /* Preview Content */,
+			);
+			path = TimeStampApp;
+			sourceTree = "<group>";
+		};
+		6DD6E0822B484B8200351D0B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6DD6E0832B484B8200351D0B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D2142792B49132700D38436 /* TimeStampWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D21428F2B49132A00D38436 /* Build configuration list for PBXNativeTarget "TimeStampWidgetExtension" */;
+			buildPhases = (
+				6D2142762B49132700D38436 /* Sources */,
+				6D2142772B49132700D38436 /* Frameworks */,
+				6D2142782B49132700D38436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeStampWidgetExtension;
+			productName = TimeStampWidgetExtension;
+			productReference = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6DD6E0782B484B6E00351D0B /* TimeStampApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD6E0872B484B8200351D0B /* Build configuration list for PBXNativeTarget "TimeStampApp" */;
+			buildPhases = (
+				6DD6E0752B484B6E00351D0B /* Sources */,
+				6DD6E0762B484B6E00351D0B /* Frameworks */,
+				6DD6E0772B484B6E00351D0B /* Resources */,
+				6D2142922B49132A00D38436 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D21428D2B49132A00D38436 /* PBXTargetDependency */,
+			);
+			name = TimeStampApp;
+			productName = TimeStampApp;
+			productReference = 6DD6E0792B484B6E00351D0B /* TimeStampApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DD6E0712B484B6E00351D0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6D2142792B49132700D38436 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					6DD6E0782B484B6E00351D0B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 6DD6E0742B484B6E00351D0B /* Build configuration list for PBXProject "TimeStampApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DD6E0702B484B6E00351D0B;
+			productRefGroup = 6DD6E07A2B484B6E00351D0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DD6E0782B484B6E00351D0B /* TimeStampApp */,
+				6D2142792B49132700D38436 /* TimeStampWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D2142782B49132700D38436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D21428A2B49132A00D38436 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD6E0772B484B6E00351D0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD6E0842B484B8200351D0B /* Preview Assets.xcassets in Resources */,
+				6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D2142762B49132700D38436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D2142822B49132700D38436 /* TimeStampWidgetBundle.swift in Sources */,
+				6D2142882B49132700D38436 /* AppIntent.swift in Sources */,
+				6D2142842B49132700D38436 /* TimeStampWidgetLiveActivity.swift in Sources */,
+				6D2142862B49132700D38436 /* TimeStampWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD6E0752B484B6E00351D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */,
+				6DD6E08F2B484E9A00351D0B /* TimeStamp.swift in Sources */,
+				6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */,
+				6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */,
+				6D2142952B4AB37F00D38436 /* Date+Extension.swift in Sources */,
+				6D2142732B4873EF00D38436 /* TimeStampRepository.swift in Sources */,
+				6DD6E08D2B484E3100351D0B /* TimeStampListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D21428D2B49132A00D38436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D2142792B49132700D38436 /* TimeStampWidgetExtension */;
+			targetProxy = 6D21428C2B49132A00D38436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D2142902B49132A00D38436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeStampWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeStampWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampApp.TimeStampWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D2142912B49132A00D38436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeStampWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeStampWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampApp.TimeStampWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DD6E0852B484B8200351D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DD6E0862B484B8200351D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DD6E0882B484B8200351D0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeStampApp/Preview Content\"";
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeStampApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DD6E0892B484B8200351D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeStampApp/Preview Content\"";
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeStampApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D21428F2B49132A00D38436 /* Build configuration list for PBXNativeTarget "TimeStampWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D2142902B49132A00D38436 /* Debug */,
+				6D2142912B49132A00D38436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DD6E0742B484B6E00351D0B /* Build configuration list for PBXProject "TimeStampApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD6E0852B484B8200351D0B /* Debug */,
+				6DD6E0862B484B8200351D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DD6E0872B484B8200351D0B /* Build configuration list for PBXNativeTarget "TimeStampApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD6E0882B484B8200351D0B /* Debug */,
+				6DD6E0892B484B8200351D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DD6E0712B484B6E00351D0B /* Project object */;
+}
