@@ -17,6 +17,8 @@
 		6D21428A2B49132A00D38436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2142892B49132A00D38436 /* Assets.xcassets */; };
 		6D21428E2B49132A00D38436 /* TimeStampWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6D2142952B4AB37F00D38436 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142942B4AB37F00D38436 /* Date+Extension.swift */; };
+		6D3B6E352B6A8A6000C3CC00 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3B6E342B6A8A6000C3CC00 /* SFUserFriendlySymbols */; };
+		6D3B6E372B6A8BC900C3CC00 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3B6E362B6A8BC900C3CC00 /* SFUserFriendlySymbols */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
 		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
@@ -80,6 +82,7 @@
 			files = (
 				6D21427F2B49132700D38436 /* SwiftUI.framework in Frameworks */,
 				6D21427D2B49132700D38436 /* WidgetKit.framework in Frameworks */,
+				6D3B6E372B6A8BC900C3CC00 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3B6E352B6A8A6000C3CC00 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +179,9 @@
 			dependencies = (
 			);
 			name = TimeStampWidgetExtension;
+			packageProductDependencies = (
+				6D3B6E362B6A8BC900C3CC00 /* SFUserFriendlySymbols */,
+			);
 			productName = TimeStampWidgetExtension;
 			productReference = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -194,6 +201,9 @@
 				6D21428D2B49132A00D38436 /* PBXTargetDependency */,
 			);
 			name = TimeStampApp;
+			packageProductDependencies = (
+				6D3B6E342B6A8A6000C3CC00 /* SFUserFriendlySymbols */,
+			);
 			productName = TimeStampApp;
 			productReference = 6DD6E0792B484B6E00351D0B /* TimeStampApp.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 6DD6E0702B484B6E00351D0B;
+			packageReferences = (
+				6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */,
+			);
 			productRefGroup = 6DD6E07A2B484B6E00351D0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -566,6 +579,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/littleossa/SFUserFriendlySymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D3B6E342B6A8A6000C3CC00 /* SFUserFriendlySymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
+			productName = SFUserFriendlySymbols;
+		};
+		6D3B6E362B6A8BC900C3CC00 /* SFUserFriendlySymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
+			productName = SFUserFriendlySymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DD6E0712B484B6E00351D0B /* Project object */;
 }
