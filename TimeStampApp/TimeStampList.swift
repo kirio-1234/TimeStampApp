@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SFUserFriendlySymbols
 
 struct TimeStampList: View {
     @ObservedObject var viewModel: TimeStampListViewModel
@@ -73,7 +74,7 @@ struct TimeStampList: View {
         Button {
             isDeletedAll.toggle()
         } label: {
-            Image(systemName: "trash")
+            Image(symbol: .trash)
         }
     }
     
@@ -108,7 +109,7 @@ struct TimeStampList: View {
         Button {
             viewModel.runAction(.edit(timeStamp: newTimeStamp))
         } label: {
-            Image(systemName: "plus")
+            Image(symbol: .plus)
                 .resizable()
                 .frame(width: 44, height: 44)
                 .foregroundStyle(.white)
