@@ -16,9 +16,10 @@
 		6D2142882B49132700D38436 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142872B49132700D38436 /* AppIntent.swift */; };
 		6D21428A2B49132A00D38436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2142892B49132A00D38436 /* Assets.xcassets */; };
 		6D21428E2B49132A00D38436 /* TimeStampWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6D2142952B4AB37F00D38436 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142942B4AB37F00D38436 /* Date+Extension.swift */; };
 		6D3B6E352B6A8A6000C3CC00 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3B6E342B6A8A6000C3CC00 /* SFUserFriendlySymbols */; };
 		6D3B6E372B6A8BC900C3CC00 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3B6E362B6A8BC900C3CC00 /* SFUserFriendlySymbols */; };
+		6DAA7C6D2B6B4D6A00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */; };
+		6DAA7C6F2B6B4E7E00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
 		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
@@ -64,7 +65,6 @@
 		6D2142892B49132A00D38436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D21428B2B49132A00D38436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2142932B4A9EAB00D38436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6D2142942B4AB37F00D38436 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
 		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +82,7 @@
 			files = (
 				6D21427F2B49132700D38436 /* SwiftUI.framework in Frameworks */,
 				6D21427D2B49132700D38436 /* WidgetKit.framework in Frameworks */,
+				6DAA7C6F2B6B4E7E00EA934C /* TimeStampCore in Frameworks */,
 				6D3B6E372B6A8BC900C3CC00 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DAA7C6D2B6B4D6A00EA934C /* TimeStampCore in Frameworks */,
 				6D3B6E352B6A8A6000C3CC00 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				6D2142932B4A9EAB00D38436 /* Info.plist */,
-				6D2142942B4AB37F00D38436 /* Date+Extension.swift */,
 				6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */,
 				6DD6E07E2B484B6E00351D0B /* ContentView.swift */,
 				6DD6E08A2B484DF900351D0B /* TimeStampList.swift */,
@@ -181,6 +182,7 @@
 			name = TimeStampWidgetExtension;
 			packageProductDependencies = (
 				6D3B6E362B6A8BC900C3CC00 /* SFUserFriendlySymbols */,
+				6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */,
 			);
 			productName = TimeStampWidgetExtension;
 			productReference = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */;
@@ -203,6 +205,7 @@
 			name = TimeStampApp;
 			packageProductDependencies = (
 				6D3B6E342B6A8A6000C3CC00 /* SFUserFriendlySymbols */,
+				6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */,
 			);
 			productName = TimeStampApp;
 			productReference = 6DD6E0792B484B6E00351D0B /* TimeStampApp.app */;
@@ -237,6 +240,7 @@
 			mainGroup = 6DD6E0702B484B6E00351D0B;
 			packageReferences = (
 				6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */,
+				6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */,
 			);
 			productRefGroup = 6DD6E07A2B484B6E00351D0B /* Products */;
 			projectDirPath = "";
@@ -288,7 +292,6 @@
 				6DD6E08F2B484E9A00351D0B /* TimeStamp.swift in Sources */,
 				6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */,
 				6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */,
-				6D2142952B4AB37F00D38436 /* Date+Extension.swift in Sources */,
 				6D2142732B4873EF00D38436 /* TimeStampRepository.swift in Sources */,
 				6DD6E08D2B484E3100351D0B /* TimeStampListViewModel.swift in Sources */,
 			);
@@ -589,6 +592,14 @@
 				minimumVersion = 0.4.0;
 			};
 		};
+		6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirio-1234/TimeStampCore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -601,6 +612,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
 			productName = SFUserFriendlySymbols;
+		};
+		6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */;
+			productName = TimeStampCore;
+		};
+		6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */;
+			productName = TimeStampCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
