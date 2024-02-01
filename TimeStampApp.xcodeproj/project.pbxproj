@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D2142732B4873EF00D38436 /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142722B4873EF00D38436 /* TimeStampRepository.swift */; };
 		6D21427D2B49132700D38436 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D21427C2B49132700D38436 /* WidgetKit.framework */; };
 		6D21427F2B49132700D38436 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D21427E2B49132700D38436 /* SwiftUI.framework */; };
 		6D2142822B49132700D38436 /* TimeStampWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2142812B49132700D38436 /* TimeStampWidgetBundle.swift */; };
@@ -26,7 +25,6 @@
 		6DD6E0842B484B8200351D0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0832B484B8200351D0B /* Preview Assets.xcassets */; };
 		6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08A2B484DF900351D0B /* TimeStampList.swift */; };
 		6DD6E08D2B484E3100351D0B /* TimeStampListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */; };
-		6DD6E08F2B484E9A00351D0B /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08E2B484E9A00351D0B /* TimeStamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6D2142722B4873EF00D38436 /* TimeStampRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampRepository.swift; sourceTree = "<group>"; };
 		6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeStampWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D21427C2B49132700D38436 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6D21427E2B49132700D38436 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -72,7 +69,6 @@
 		6DD6E0832B484B8200351D0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6DD6E08A2B484DF900351D0B /* TimeStampList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampList.swift; sourceTree = "<group>"; };
 		6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampListViewModel.swift; sourceTree = "<group>"; };
-		6DD6E08E2B484E9A00351D0B /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +143,7 @@
 				6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */,
 				6DD6E07E2B484B6E00351D0B /* ContentView.swift */,
 				6DD6E08A2B484DF900351D0B /* TimeStampList.swift */,
-				6DD6E08E2B484E9A00351D0B /* TimeStamp.swift */,
 				6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */,
-				6D2142722B4873EF00D38436 /* TimeStampRepository.swift */,
 				6DD6E0802B484B8200351D0B /* Assets.xcassets */,
 				6DD6E0822B484B8200351D0B /* Preview Content */,
 			);
@@ -289,10 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */,
-				6DD6E08F2B484E9A00351D0B /* TimeStamp.swift in Sources */,
 				6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */,
 				6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */,
-				6D2142732B4873EF00D38436 /* TimeStampRepository.swift in Sources */,
 				6DD6E08D2B484E3100351D0B /* TimeStampListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
