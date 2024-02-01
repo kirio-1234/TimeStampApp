@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TimeStampCore
 
 struct ContentView: View {
     var body: some View {

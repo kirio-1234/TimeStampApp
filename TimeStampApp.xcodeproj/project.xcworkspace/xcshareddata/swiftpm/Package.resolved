@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kirio-1234/TimeStampCore",
       "state" : {
-        "revision" : "356b32aa19508da6aafeeb3cbb94ab0dc9f81936",
-        "version" : "0.3.0"
+        "revision" : "2b5f6462bba911c401eff0da4c62392bb8cb7268",
+        "version" : "0.5.0"
       }
     }
   ],
