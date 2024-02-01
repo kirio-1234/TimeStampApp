@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 import AppIntents
+import SFUserFriendlySymbols
 
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -69,7 +70,7 @@ struct SuperCharge: AppIntent {
 struct TimeStampWidgetView: View {
     var body: some View {
         Button(intent: SuperCharge()) {
-            Image(systemName: "plus")
+            Image(symbol: .plus)
                 .resizable()
                 .scaledToFit()
                 .padding()
