@@ -22,7 +22,6 @@
 		6D40F7602B6BDC1B00D03D23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D40F75F2B6BDC1B00D03D23 /* Preview Assets.xcassets */; };
 		6D40F7662B6BDC6600D03D23 /* TimeStampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40F7652B6BDC6600D03D23 /* TimeStampList.swift */; };
 		6D40F7682B6BE25C00D03D23 /* TimeStampListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40F7672B6BE25C00D03D23 /* TimeStampListViewModel.swift */; };
-		6D40F76B2B6BE3B600D03D23 /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40F76A2B6BE3B600D03D23 /* TimeStampCore */; };
 		6D40F76D2B6BE3BC00D03D23 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40F76C2B6BE3BC00D03D23 /* SFUserFriendlySymbols */; };
 		6D4687792BBEF47700F4A9FB /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6D46878D2BBEFB1D00F4A9FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */; };
@@ -34,8 +33,6 @@
 		6D4687962BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
 		6D4687972BBEFB7600F4A9FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */; };
 		6D4687982BBEFB7700F4A9FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */; };
-		6DAA7C6D2B6B4D6A00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */; };
-		6DAA7C6F2B6B4E7E00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
 		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
@@ -108,7 +105,6 @@
 			files = (
 				6D21427F2B49132700D38436 /* SwiftUI.framework in Frameworks */,
 				6D21427D2B49132700D38436 /* WidgetKit.framework in Frameworks */,
-				6DAA7C6F2B6B4E7E00EA934C /* TimeStampCore in Frameworks */,
 				6D3B6E372B6A8BC900C3CC00 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D40F76B2B6BE3B600D03D23 /* TimeStampCore in Frameworks */,
 				6D40F76D2B6BE3BC00D03D23 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAA7C6D2B6B4D6A00EA934C /* TimeStampCore in Frameworks */,
 				6D3B6E352B6A8A6000C3CC00 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +254,6 @@
 			name = TimeStampWidgetExtension;
 			packageProductDependencies = (
 				6D3B6E362B6A8BC900C3CC00 /* SFUserFriendlySymbols */,
-				6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */,
 			);
 			productName = TimeStampWidgetExtension;
 			productReference = 6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */;
@@ -280,7 +273,6 @@
 			);
 			name = TimeStampMac;
 			packageProductDependencies = (
-				6D40F76A2B6BE3B600D03D23 /* TimeStampCore */,
 				6D40F76C2B6BE3BC00D03D23 /* SFUserFriendlySymbols */,
 			);
 			productName = TimeStampMac;
@@ -304,7 +296,6 @@
 			name = TimeStampApp;
 			packageProductDependencies = (
 				6D3B6E342B6A8A6000C3CC00 /* SFUserFriendlySymbols */,
-				6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */,
 			);
 			productName = TimeStampApp;
 			productReference = 6DD6E0792B484B6E00351D0B /* TimeStampApp.app */;
@@ -342,7 +333,6 @@
 			mainGroup = 6DD6E0702B484B6E00351D0B;
 			packageReferences = (
 				6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */,
-				6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */,
 			);
 			productRefGroup = 6DD6E07A2B484B6E00351D0B /* Products */;
 			projectDirPath = "";
@@ -795,14 +785,6 @@
 				minimumVersion = 0.4.0;
 			};
 		};
-		6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kirio-1234/TimeStampCore";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -816,25 +798,10 @@
 			package = 6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
 			productName = SFUserFriendlySymbols;
 		};
-		6D40F76A2B6BE3B600D03D23 /* TimeStampCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */;
-			productName = TimeStampCore;
-		};
 		6D40F76C2B6BE3BC00D03D23 /* SFUserFriendlySymbols */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6D3B6E332B6A8A0000C3CC00 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
 			productName = SFUserFriendlySymbols;
-		};
-		6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */;
-			productName = TimeStampCore;
-		};
-		6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6DAA7C6B2B6B4D6A00EA934C /* XCRemoteSwiftPackageReference "TimeStampCore" */;
-			productName = TimeStampCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
