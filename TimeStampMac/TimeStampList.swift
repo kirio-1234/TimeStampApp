@@ -7,7 +7,6 @@
 
 import SwiftUI
 import SFUserFriendlySymbols
-import TimeStampCore
 
 struct TimeStampList: View {
     @ObservedObject var viewModel: TimeStampListViewModel
