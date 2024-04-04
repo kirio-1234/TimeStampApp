@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import TimeStampCore
 
 @MainActor
 final class TimeStampListViewModel: ObservableObject {
