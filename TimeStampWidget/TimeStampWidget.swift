@@ -49,37 +49,17 @@ struct TimeStampWidgetEntryView : View {
     }
 }
 
-struct TimeStampIntent: AppIntent {
-    static var title: LocalizedStringResource = "Time Stamp"
-    
-    func perform() async throws -> some IntentResult {
-        return .result()
-    }
-}
-
-struct SuperCharge: AppIntent {
-    
-    static var title: LocalizedStringResource = "Emoji Ranger SuperCharger"
-    static var description = IntentDescription("All heroes get instant 100% health.")
-    
-    func perform() async throws -> some IntentResult {
-        return .result()
-    }
-}
-
 struct TimeStampWidgetView: View {
     var body: some View {
-        Button(intent: SuperCharge()) {
-            Image(symbol: .plus)
-                .resizable()
-                .scaledToFit()
-                .padding()
-                .foregroundStyle(.white)
-                .padding()
-                .background(Color.blue)
-                .clipShape(Circle())
-        }
-        .buttonStyle(.plain)
+        Image(symbol: .plus)
+            .resizable()
+            .scaledToFit()
+            .padding()
+            .foregroundStyle(.white)
+            .padding()
+            .background(Color.blue)
+            .clipShape(Circle())
+            .widgetURL(URL(string: "com-time-stamp-app://"))
     }
 }
 
