@@ -25,6 +25,15 @@
 		6D40F76B2B6BE3B600D03D23 /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40F76A2B6BE3B600D03D23 /* TimeStampCore */; };
 		6D40F76D2B6BE3BC00D03D23 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40F76C2B6BE3BC00D03D23 /* SFUserFriendlySymbols */; };
 		6D4687792BBEF47700F4A9FB /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
+		6D46878D2BBEFB1D00F4A9FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */; };
+		6D46878F2BBEFB3200F4A9FB /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */; };
+		6D4687902BBEFB3200F4A9FB /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */; };
+		6D4687912BBEFB3200F4A9FB /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */; };
+		6D4687942BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
+		6D4687952BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
+		6D4687962BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
+		6D4687972BBEFB7600F4A9FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */; };
+		6D4687982BBEFB7700F4A9FB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */; };
 		6DAA7C6D2B6B4D6A00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */; };
 		6DAA7C6F2B6B4E7E00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
@@ -80,6 +89,9 @@
 		6D40F7692B6BE38400D03D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6D46877A2BBEF50200F4A9FB /* TimeStampApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeStampApp.entitlements; sourceTree = "<group>"; };
 		6D46877B2BBEF54B00F4A9FB /* TimeStampWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeStampWidgetExtension.entitlements; sourceTree = "<group>"; };
+		6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
+		6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampRepository.swift; sourceTree = "<group>"; };
 		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
 		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +178,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6D46878A2BBEFAB600F4A9FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */,
+				6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D46878B2BBEFB0D00F4A9FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D46878C2BBEFB1D00F4A9FB /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6DD6E0702B484B6E00351D0B = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +220,8 @@
 		6DD6E07B2B484B6E00351D0B /* TimeStampApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D46878B2BBEFB0D00F4A9FB /* Extensions */,
+				6D46878A2BBEFAB600F4A9FB /* Model */,
 				6D46877A2BBEF50200F4A9FB /* TimeStampApp.entitlements */,
 				6D2142932B4A9EAB00D38436 /* Info.plist */,
 				6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */,
@@ -359,8 +390,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D2142822B49132700D38436 /* TimeStampWidgetBundle.swift in Sources */,
+				6D4687902BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
 				6D2142882B49132700D38436 /* AppIntent.swift in Sources */,
 				6D2142842B49132700D38436 /* TimeStampWidgetLiveActivity.swift in Sources */,
+				6D4687972BBEFB7600F4A9FB /* Date+Extension.swift in Sources */,
+				6D4687952BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */,
 				6D2142862B49132700D38436 /* TimeStampWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,8 +404,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D40F7662B6BDC6600D03D23 /* TimeStampList.swift in Sources */,
+				6D4687912BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
 				6D40F75B2B6BDC1500D03D23 /* ContentView.swift in Sources */,
 				6D4687792BBEF47700F4A9FB /* TimeStampApp.swift in Sources */,
+				6D4687982BBEFB7700F4A9FB /* Date+Extension.swift in Sources */,
+				6D4687962BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */,
 				6D40F7682B6BE25C00D03D23 /* TimeStampListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D46878D2BBEFB1D00F4A9FB /* Date+Extension.swift in Sources */,
 				6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */,
+				6D4687942BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */,
+				6D46878F2BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
 				6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */,
 				6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */,
 				6DD6E08D2B484E3100351D0B /* TimeStampListViewModel.swift in Sources */,
