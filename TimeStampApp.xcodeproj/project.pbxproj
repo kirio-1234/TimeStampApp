@@ -24,6 +24,7 @@
 		6D40F7682B6BE25C00D03D23 /* TimeStampListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40F7672B6BE25C00D03D23 /* TimeStampListViewModel.swift */; };
 		6D40F76B2B6BE3B600D03D23 /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40F76A2B6BE3B600D03D23 /* TimeStampCore */; };
 		6D40F76D2B6BE3BC00D03D23 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D40F76C2B6BE3BC00D03D23 /* SFUserFriendlySymbols */; };
+		6D4687792BBEF47700F4A9FB /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DAA7C6D2B6B4D6A00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6C2B6B4D6A00EA934C /* TimeStampCore */; };
 		6DAA7C6F2B6B4E7E00EA934C /* TimeStampCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DAA7C6E2B6B4E7E00EA934C /* TimeStampCore */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
@@ -77,6 +78,8 @@
 		6D40F7652B6BDC6600D03D23 /* TimeStampList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampList.swift; sourceTree = "<group>"; };
 		6D40F7672B6BE25C00D03D23 /* TimeStampListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampListViewModel.swift; sourceTree = "<group>"; };
 		6D40F7692B6BE38400D03D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6D46877A2BBEF50200F4A9FB /* TimeStampApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeStampApp.entitlements; sourceTree = "<group>"; };
+		6D46877B2BBEF54B00F4A9FB /* TimeStampWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeStampWidgetExtension.entitlements; sourceTree = "<group>"; };
 		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
 		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +169,7 @@
 		6DD6E0702B484B6E00351D0B = {
 			isa = PBXGroup;
 			children = (
+				6D46877B2BBEF54B00F4A9FB /* TimeStampWidgetExtension.entitlements */,
 				6DD6E07B2B484B6E00351D0B /* TimeStampApp */,
 				6D2142802B49132700D38436 /* TimeStampWidget */,
 				6D40F7572B6BDC1500D03D23 /* TimeStampMac */,
@@ -187,6 +191,7 @@
 		6DD6E07B2B484B6E00351D0B /* TimeStampApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D46877A2BBEF50200F4A9FB /* TimeStampApp.entitlements */,
 				6D2142932B4A9EAB00D38436 /* Info.plist */,
 				6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */,
 				6DD6E07E2B484B6E00351D0B /* ContentView.swift */,
@@ -366,6 +371,7 @@
 			files = (
 				6D40F7662B6BDC6600D03D23 /* TimeStampList.swift in Sources */,
 				6D40F75B2B6BDC1500D03D23 /* ContentView.swift in Sources */,
+				6D4687792BBEF47700F4A9FB /* TimeStampApp.swift in Sources */,
 				6D40F7682B6BE25C00D03D23 /* TimeStampListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeStampWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -426,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeStampWidgetExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -635,6 +643,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeStampApp/TimeStampApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -668,6 +677,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeStampApp/TimeStampApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
