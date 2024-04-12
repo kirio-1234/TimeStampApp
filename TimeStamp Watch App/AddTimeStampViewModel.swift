@@ -25,7 +25,7 @@ final class AddTimeStampViewModel: ObservableObject {
         }
     }
     
-    func edit(timeStamp: TimeStamp) {
+    private func edit(timeStamp: TimeStamp) {
         repository.edit(timeStamp: timeStamp)
     }
 }

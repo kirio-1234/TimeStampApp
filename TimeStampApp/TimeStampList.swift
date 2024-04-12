@@ -41,7 +41,7 @@ struct TimeStampList: View {
         }
         .onOpenURL { url in
             if url == URL(string: "com-time-stamp-app://") {
-                viewModel.edit(timeStamp: newTimeStamp)
+                viewModel.runAction(.edit(timeStamp: newTimeStamp))
             }
         }
     }

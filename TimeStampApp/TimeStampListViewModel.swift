@@ -46,19 +46,19 @@ final class TimeStampListViewModel: ObservableObject {
         }
     }
     
-    func edit(timeStamp: TimeStamp) {
+    private func edit(timeStamp: TimeStamp) {
         repository.edit(timeStamp: timeStamp)
     }
     
-    func delete(offsets: IndexSet) {
+    private func delete(offsets: IndexSet) {
         repository.delete(offsets: offsets)
     }
     
-    func delete(id: TimeStamp.ID) {
+    private func delete(id: TimeStamp.ID) {
         repository.delete(id: id)
     }
     
-    func deleteAll() {
+    private func deleteAll() {
         repository.deleteAll()
     }
 }
