@@ -24,3 +24,9 @@ import Foundation
         case end = "終了"
     }
 }
+
+extension TimeStamp {
+    static var currentTimeStamp: Self {
+        .init(id: UUID(), date: Date())
+    }
+}

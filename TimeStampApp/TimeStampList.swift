@@ -41,7 +41,7 @@ struct TimeStampList: View {
         }
         .onOpenURL { url in
             if url == URL(string: "com-time-stamp-app://") {
-                viewModel.runAction(.edit(timeStamp: newTimeStamp))
+                viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
             }
         }
     }
@@ -107,7 +107,7 @@ struct TimeStampList: View {
     
     var addTimeStampButton: some View {
         Button {
-            viewModel.runAction(.edit(timeStamp: newTimeStamp))
+            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
         } label: {
             Image(symbol: .plus)
                 .resizable()
@@ -118,9 +118,5 @@ struct TimeStampList: View {
                 .clipShape(Circle())
         }
         .padding()
-    }
-    
-    var newTimeStamp: TimeStamp {
-        .init(id: UUID(), date: Date(), type: nil)
     }
 }

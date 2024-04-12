@@ -24,7 +24,7 @@ struct TimeStampList: View {
     
     var addTimeStampButton: some View {
         Button {
-            viewModel.runAction(.edit(timeStamp: newTimeStamp))
+            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
         } label: {
             Image(symbol: .plus)
         }
@@ -46,11 +46,5 @@ struct TimeStampList: View {
                 Text(timeStamp.date.yyyyMMDDEEEHHmm)
             }
         }
-    }
-}
-
-private extension TimeStampList {
-    var newTimeStamp: TimeStamp {
-        .init(id: UUID(), date: Date(), type: nil)
     }
 }
