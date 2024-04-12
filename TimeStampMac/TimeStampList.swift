@@ -33,7 +33,7 @@ struct TimeStampList: View {
     
     var deleteAllButton: some View {
         Button {
-            viewModel.deleteAll()
+            viewModel.runAction(.deleteAll)
         } label: {
             Image(symbol: .trash)
         }
