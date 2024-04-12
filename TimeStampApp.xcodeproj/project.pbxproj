@@ -55,6 +55,7 @@
 		6D824F5C2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */; };
 		6D824F5D2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */; };
 		6D824F5E2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */; };
+		6D824F622BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
 		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
@@ -138,6 +139,7 @@
 		6D4687D32BBF063D00F4A9FB /* AddTimeStampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeStampViewModel.swift; sourceTree = "<group>"; };
 		6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampCorder.swift; sourceTree = "<group>"; };
 		6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTimeStampRepository.swift; sourceTree = "<group>"; };
+		6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTimeStampRepository.swift; sourceTree = "<group>"; };
 		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
 		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -278,9 +280,26 @@
 			isa = PBXGroup;
 			children = (
 				6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */,
-				6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */,
+				6D824F602BC94F320054B1D1 /* InMemoryRepository */,
+				6D824F5F2BC94F190054B1D1 /* UserDefaultRepository */,
 			);
 			path = Infra;
+			sourceTree = "<group>";
+		};
+		6D824F5F2BC94F190054B1D1 /* UserDefaultRepository */ = {
+			isa = PBXGroup;
+			children = (
+				6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */,
+			);
+			path = UserDefaultRepository;
+			sourceTree = "<group>";
+		};
+		6D824F602BC94F320054B1D1 /* InMemoryRepository */ = {
+			isa = PBXGroup;
+			children = (
+				6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */,
+			);
+			path = InMemoryRepository;
 			sourceTree = "<group>";
 		};
 		6DD6E0702B484B6E00351D0B = {
@@ -566,6 +585,7 @@
 				6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */,
 				6D824F562BC92F200054B1D1 /* TimeStampCorder.swift in Sources */,
 				6D4687942BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */,
+				6D824F622BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift in Sources */,
 				6D46878F2BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
 				6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */,
 				6D824F5B2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift in Sources */,
