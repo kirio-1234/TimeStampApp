@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension Date {
+extension Date {
     var yyyyMMDDEEEHHmm: String {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = .init(identifier: .gregorian)

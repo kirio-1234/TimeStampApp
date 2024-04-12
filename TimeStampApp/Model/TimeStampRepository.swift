@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol TimeStampRepository {
+protocol TimeStampRepository {
     func fetchAll() -> [TimeStamp]
     func edit(timeStamp: TimeStamp)
     func delete(id: TimeStamp.ID)
@@ -15,7 +15,7 @@ public protocol TimeStampRepository {
     func deleteAll()
 }
 
-public extension UserDefaults {
+extension UserDefaults {
     var corder: TimeStampCorder {
         TimeStampCorder()
     }
@@ -36,16 +36,16 @@ public extension UserDefaults {
     }
 }
 
-public struct UserDefaultTimeStampRepository: TimeStampRepository {
-    public let userDefault = UserDefaults.standard
+struct UserDefaultTimeStampRepository: TimeStampRepository {
+    let userDefault = UserDefaults.standard
     
-    public init() { }
+    init() { }
     
-    public func fetchAll() -> [TimeStamp] {
+    func fetchAll() -> [TimeStamp] {
         userDefault.timeStamps ?? []
     }
     
-    public func edit(timeStamp: TimeStamp) {
+    func edit(timeStamp: TimeStamp) {
         if let index = userDefault.timeStamps?.firstIndex(where: { $0.id == timeStamp.id }) {
             userDefault.timeStamps?[index] = timeStamp
         } else {
@@ -53,7 +53,7 @@ public struct UserDefaultTimeStampRepository: TimeStampRepository {
         }
     }
     
-    public func delete(id: TimeStamp.ID) {
+    func delete(id: TimeStamp.ID) {
         if let timeStamps = userDefault.timeStamps {
             if let index = timeStamps.firstIndex(where: { $0.id == id }) {
                 userDefault.timeStamps?.remove(at: index)
@@ -61,23 +61,23 @@ public struct UserDefaultTimeStampRepository: TimeStampRepository {
         }
     }
     
-    public func delete(offsets: IndexSet) {
+    func delete(offsets: IndexSet) {
         userDefault.timeStamps?.remove(atOffsets: offsets)
     }
     
-    public func deleteAll() {
+    func deleteAll() {
         userDefault.timeStamps?.removeAll()
     }
 }
 
-public struct TimeStampCorder {
-    public func decode(data: Data?) -> [TimeStamp]? {
+struct TimeStampCorder {
+    func decode(data: Data?) -> [TimeStamp]? {
         let jsonDecoder = JSONDecoder()
         guard let data else { return nil }
         return try? jsonDecoder.decode([TimeStamp].self, from: data)
     }
     
-    public func encode(timeStamps: [TimeStamp]) -> Data? {
+    func encode(timeStamps: [TimeStamp]) -> Data? {
         return try? JSONEncoder().encode(timeStamps)
     }
 }
