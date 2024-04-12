@@ -12,7 +12,7 @@ import Combine
 @MainActor
 final class TimeStampListViewModel: ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
-    let repository: UserDefaultTimeStampRepository
+    private let repository: UserDefaultTimeStampRepository
     
     private var cancellables: Set<AnyCancellable> = .init()
     
