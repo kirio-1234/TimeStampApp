@@ -6,16 +6,23 @@
 //
 
 import Foundation
-import SwiftUI
+import Combine
 
 @MainActor
 final class TimeStampListViewModel: ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     let repository: UserDefaultTimeStampRepository
     
+    private var cancellables: Set<AnyCancellable> = .init()
+    
     init(repository: UserDefaultTimeStampRepository) {
         self.repository = repository
-        fetchTimeStamps()
+        
+        self.repository.timeStamps
+            .sink { timeStamps in
+                self.timeStamps = timeStamps ?? []
+            }
+            .store(in: &cancellables)
     }
     
     enum Action {
@@ -32,17 +39,11 @@ final class TimeStampListViewModel: ObservableObject {
         }
     }
     
-    func fetchTimeStamps() {
-        timeStamps = repository.fetchAll()
-    }
-    
-    func edit(timeStamp: TimeStamp) {
+    private func edit(timeStamp: TimeStamp) {
         repository.edit(timeStamp: timeStamp)
-        fetchTimeStamps()
     }
     
-    func deleteAll() {
+    private func deleteAll() {
         repository.deleteAll()
-        fetchTimeStamps()
     }
 }

@@ -11,11 +11,11 @@ struct AddTimeStampView: View {
     @ObservedObject var viewModel: AddTimeStampViewModel
     var body: some View {
         AddTimeStampButton {
-            viewModel.runAction(.edit(timeStamp: TimeStamp(id: UUID(), date: Date())))
+            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
         }
     }
 }
 
 #Preview {
-    AddTimeStampView(viewModel: AddTimeStampViewModel(repository: UserDefaultTimeStampRepository()))
+    AddTimeStampView(viewModel: AddTimeStampViewModel(repository: UserDefaultTimeStampRepository(userDefault: .standard)))
 }
