@@ -15,7 +15,6 @@ final class TimeStampListViewModel: ObservableObject {
     
     init(repository: UserDefaultTimeStampRepository) {
         self.repository = repository
-        fetchTimeStamps()
     }
     
     enum Action {
@@ -32,16 +31,11 @@ final class TimeStampListViewModel: ObservableObject {
         }
     }
     
-    func fetchTimeStamps() {
-    }
-    
     func edit(timeStamp: TimeStamp) {
         repository.edit(timeStamp: timeStamp)
-        fetchTimeStamps()
     }
     
     func deleteAll() {
         repository.deleteAll()
-        fetchTimeStamps()
     }
 }
