@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TimeStampList(viewModel: TimeStampListViewModel(repository: UserDefaultTimeStampRepository()))
+        TimeStampList(viewModel: TimeStampListViewModel(repository: UserDefaultTimeStampRepository(userDefault: .standard)))
     }
 }
 

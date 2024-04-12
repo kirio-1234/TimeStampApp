@@ -29,9 +29,11 @@ extension UserDefaults {
 }
 
 struct UserDefaultTimeStampRepository: TimeStampRepository {
-    let userDefault = UserDefaults.standard
+    private let userDefault: UserDefaults
     
-    init() { }
+    init(userDefault: UserDefaults) { 
+        self.userDefault = userDefault
+    }
     
     func fetchAll() -> [TimeStamp] {
         userDefault.timeStamps ?? []
