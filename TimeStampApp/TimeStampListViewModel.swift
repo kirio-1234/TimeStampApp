@@ -7,15 +7,23 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 @MainActor
 final class TimeStampListViewModel: ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     let repository: UserDefaultTimeStampRepository
     
+    private var cancellables: Set<AnyCancellable> = .init()
+    
     init(repository: UserDefaultTimeStampRepository) {
         self.repository = repository
-        fetchTimeStamps()
+        
+        self.repository.timeStamps
+            .sink { timeStamps in
+                self.timeStamps = timeStamps ?? []
+            }
+            .store(in: &cancellables)
     }
     
     enum Action {
@@ -38,28 +46,20 @@ final class TimeStampListViewModel: ObservableObject {
         }
     }
     
-    func fetchTimeStamps() {
-        timeStamps = repository.fetchAll()
-    }
-    
     func edit(timeStamp: TimeStamp) {
         repository.edit(timeStamp: timeStamp)
-        fetchTimeStamps()
     }
     
     func delete(offsets: IndexSet) {
         repository.delete(offsets: offsets)
-        fetchTimeStamps()
     }
     
     func delete(id: TimeStamp.ID) {
         repository.delete(id: id)
-        fetchTimeStamps()
     }
     
     func deleteAll() {
         repository.deleteAll()
-        fetchTimeStamps()
     }
 }
 
@@ -70,8 +70,8 @@ extension TimeStampListViewModel {
                 return timeStamp.type ?? .none
             },
             set: { [weak self] newValue in
-                let timeStamps = self?.repository.fetchAll()
-                if let index = timeStamps?.firstIndex(where: { $0.id == timeStamp.id} ) {
+                guard var timeStamps = self?.repository.timeStamps.value else { return }
+                if let index = timeStamps.firstIndex(where: { $0.id == timeStamp.id} ) {
                     self?.timeStamps[index].type = newValue
                     if let newTimeStamp = self?.timeStamps[index] {
                         self?.repository.edit(timeStamp: newTimeStamp)
