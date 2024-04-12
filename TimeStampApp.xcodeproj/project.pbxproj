@@ -47,6 +47,10 @@
 		6D4687D02BBF051B00F4A9FB /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
 		6D4687D22BBF053E00F4A9FB /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 6D4687D12BBF053E00F4A9FB /* SFUserFriendlySymbols */; };
 		6D4687D42BBF063D00F4A9FB /* AddTimeStampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687D32BBF063D00F4A9FB /* AddTimeStampViewModel.swift */; };
+		6D824F562BC92F200054B1D1 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
+		6D824F572BC92F200054B1D1 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
+		6D824F582BC92F200054B1D1 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
+		6D824F592BC92F200054B1D1 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
 		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
@@ -128,6 +132,7 @@
 		6D4687C82BBF037000F4A9FB /* AddTimeStampButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeStampButton.swift; sourceTree = "<group>"; };
 		6D4687CC2BBF042D00F4A9FB /* AddTimeStampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeStampView.swift; sourceTree = "<group>"; };
 		6D4687D32BBF063D00F4A9FB /* AddTimeStampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeStampViewModel.swift; sourceTree = "<group>"; };
+		6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampCorder.swift; sourceTree = "<group>"; };
 		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
 		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -264,6 +269,14 @@
 			path = ViewParts;
 			sourceTree = "<group>";
 		};
+		6D824F542BC92F0E0054B1D1 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
 		6DD6E0702B484B6E00351D0B = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +304,7 @@
 		6DD6E07B2B484B6E00351D0B /* TimeStampApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D824F542BC92F0E0054B1D1 /* Infra */,
 				6D4687C72BBF035100F4A9FB /* ViewParts */,
 				6D46878B2BBEFB0D00F4A9FB /* Extensions */,
 				6D46878A2BBEFAB600F4A9FB /* Model */,
@@ -494,6 +508,7 @@
 			files = (
 				6D2142822B49132700D38436 /* TimeStampWidgetBundle.swift in Sources */,
 				6D4687902BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
+				6D824F572BC92F200054B1D1 /* TimeStampCorder.swift in Sources */,
 				6D2142882B49132700D38436 /* AppIntent.swift in Sources */,
 				6D2142842B49132700D38436 /* TimeStampWidgetLiveActivity.swift in Sources */,
 				6D4687972BBEFB7600F4A9FB /* Date+Extension.swift in Sources */,
@@ -510,6 +525,7 @@
 				6D40F7662B6BDC6600D03D23 /* TimeStampList.swift in Sources */,
 				6D4687912BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
 				6D40F75B2B6BDC1500D03D23 /* ContentView.swift in Sources */,
+				6D824F582BC92F200054B1D1 /* TimeStampCorder.swift in Sources */,
 				6D4687792BBEF47700F4A9FB /* TimeStampApp.swift in Sources */,
 				6D4687982BBEFB7700F4A9FB /* Date+Extension.swift in Sources */,
 				6D4687962BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */,
@@ -523,6 +539,7 @@
 			files = (
 				6D4687CE2BBF051600F4A9FB /* Date+Extension.swift in Sources */,
 				6D4687C62BBF030F00F4A9FB /* TimeStampApp.swift in Sources */,
+				6D824F592BC92F200054B1D1 /* TimeStampCorder.swift in Sources */,
 				6D4687D02BBF051B00F4A9FB /* TimeStampRepository.swift in Sources */,
 				6D4687CF2BBF051900F4A9FB /* TimeStamp.swift in Sources */,
 				6D4687CD2BBF042D00F4A9FB /* AddTimeStampView.swift in Sources */,
@@ -538,6 +555,7 @@
 			files = (
 				6D46878D2BBEFB1D00F4A9FB /* Date+Extension.swift in Sources */,
 				6DD6E08B2B484DF900351D0B /* TimeStampList.swift in Sources */,
+				6D824F562BC92F200054B1D1 /* TimeStampCorder.swift in Sources */,
 				6D4687942BBEFB6200F4A9FB /* TimeStampRepository.swift in Sources */,
 				6D46878F2BBEFB3200F4A9FB /* TimeStamp.swift in Sources */,
 				6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */,
