@@ -8,7 +8,6 @@
 import Foundation
 
 protocol TimeStampRepository {
-    func fetchAll() -> [TimeStamp]
     func edit(timeStamp: TimeStamp)
     func delete(id: TimeStamp.ID)
     func delete(offsets: IndexSet)

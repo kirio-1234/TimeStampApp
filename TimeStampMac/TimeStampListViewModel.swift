@@ -33,7 +33,6 @@ final class TimeStampListViewModel: ObservableObject {
     }
     
     func fetchTimeStamps() {
-        timeStamps = repository.fetchAll()
     }
     
     func edit(timeStamp: TimeStamp) {
