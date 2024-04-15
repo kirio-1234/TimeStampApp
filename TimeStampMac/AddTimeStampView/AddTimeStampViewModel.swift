@@ -1,27 +1,17 @@
 //
-//  TimeStampListViewModel.swift
+//  AddTimeStampViewModel.swift
 //  TimeStampMac
 //
-//  Created by Iori Suzuki on 2024/02/01.
+//  Created by Iori Suzuki on 2024/04/12.
 //
 
 import Foundation
-import Combine
 
-@MainActor
-final class TimeStampListViewModel: ObservableObject {
-    @Published var timeStamps: [TimeStamp] = []
+final class AddTimeStampViewModel: ObservableObject {
     private let repository: UserDefaultTimeStampRepository
-    private var cancellables: Set<AnyCancellable> = .init()
     
     init(repository: UserDefaultTimeStampRepository) {
         self.repository = repository
-        
-        self.repository.timeStamps
-            .sink { timeStamps in
-                self.timeStamps = timeStamps ?? []
-            }
-            .store(in: &cancellables)
     }
     
     enum Action {

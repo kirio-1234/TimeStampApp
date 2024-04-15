@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct TimeStampApp: App {
+    private let repository = UserDefaultTimeStampRepository(userDefault: .standard)
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: TimeStampListViewModel(repository: repository))
+        }
+        
+        MenuBarExtra {
+            AddTimeStampView(viewModel: AddTimeStampViewModel(repository: repository))
+        } label: {
+            Image(symbol: .timer)
         }
     }
 }
