@@ -8,9 +8,10 @@
 import Foundation
 import SwiftUI
 import Combine
+import WatchConnectivity
 
 @MainActor
-final class TimeStampListViewModel: ObservableObject {
+final class TimeStampListViewModel: NSObject, ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     private let repository: UserDefaultTimeStampRepository
     
@@ -18,6 +19,8 @@ final class TimeStampListViewModel: ObservableObject {
     
     init(repository: UserDefaultTimeStampRepository) {
         self.repository = repository
+        
+        super.init()
         
         self.repository.timeStamps
             .sink { timeStamps in
@@ -79,5 +82,16 @@ extension TimeStampListViewModel {
                 }
             }
         )
+    }
+}
+
+extension TimeStampListViewModel: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
     }
 }
