@@ -17,5 +17,5 @@ struct AddTimeStampView: View {
 }
 
 #Preview {
-    AddTimeStampView(viewModel: AddTimeStampViewModel(repository: UserDefaultTimeStampRepository(userDefault: .standard)))
+    AddTimeStampView(viewModel: AddTimeStampViewModel())
 }

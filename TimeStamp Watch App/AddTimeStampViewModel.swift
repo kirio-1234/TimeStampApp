@@ -8,10 +8,8 @@
 import Foundation
 
 final class AddTimeStampViewModel: ObservableObject {
-    private let repository: UserDefaultTimeStampRepository
     
-    init(repository: UserDefaultTimeStampRepository) {
-        self.repository = repository
+    init() {
     }
     
     enum Action {
@@ -26,6 +24,5 @@ final class AddTimeStampViewModel: ObservableObject {
     }
     
     private func edit(timeStamp: TimeStamp) {
-        repository.edit(timeStamp: timeStamp)
     }
 }
