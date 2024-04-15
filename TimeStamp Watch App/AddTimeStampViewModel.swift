@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import WatchConnectivity
 
-final class AddTimeStampViewModel: ObservableObject {
+final class AddTimeStampViewModel: NSObject, ObservableObject {
     
-    init() {
+    override init() {
+        super.init()
     }
     
     enum Action {
@@ -24,5 +26,10 @@ final class AddTimeStampViewModel: ObservableObject {
     }
     
     private func edit(timeStamp: TimeStamp) {
+    }
+}
+
+extension AddTimeStampViewModel: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
     }
 }
