@@ -6,12 +6,16 @@
 //
 
 import Foundation
+import WatchConnectivity
 
-final class AddTimeStampViewModel: ObservableObject {
-    private let repository: UserDefaultTimeStampRepository
+final class AddTimeStampViewModel: NSObject, ObservableObject {
     
-    init(repository: UserDefaultTimeStampRepository) {
-        self.repository = repository
+    private let session = WCSession.default
+    
+    override init() {
+        super.init()
+        
+        setupSession()
     }
     
     enum Action {
@@ -25,7 +29,22 @@ final class AddTimeStampViewModel: ObservableObject {
         }
     }
     
+    private func setupSession() {
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
     private func edit(timeStamp: TimeStamp) {
-        repository.edit(timeStamp: timeStamp)
+        guard let jsonData = TimeStampCorder().encode(timeStamps: [timeStamp]) else { return }
+        session.sendMessageData(jsonData, replyHandler: nil) { error in
+            print(error.localizedDescription)
+        }
+    }
+}
+
+extension AddTimeStampViewModel: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
     }
 }

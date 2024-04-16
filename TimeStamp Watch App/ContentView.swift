@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel: AddTimeStampViewModel
+    
+    init(viewModel: AddTimeStampViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        AddTimeStampView(viewModel: viewModel)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: AddTimeStampViewModel())
 }

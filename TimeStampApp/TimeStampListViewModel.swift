@@ -8,16 +8,22 @@
 import Foundation
 import SwiftUI
 import Combine
+import WatchConnectivity
 
 @MainActor
-final class TimeStampListViewModel: ObservableObject {
+final class TimeStampListViewModel: NSObject, ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     private let repository: UserDefaultTimeStampRepository
+    private let session = WCSession.default
     
     private var cancellables: Set<AnyCancellable> = .init()
     
     init(repository: UserDefaultTimeStampRepository) {
         self.repository = repository
+        
+        super.init()
+        
+        setupSession()
         
         self.repository.timeStamps
             .sink { timeStamps in
@@ -61,6 +67,13 @@ final class TimeStampListViewModel: ObservableObject {
     private func deleteAll() {
         repository.deleteAll()
     }
+    
+    private func setupSession() {
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
+    }
 }
 
 extension TimeStampListViewModel {
@@ -70,14 +83,32 @@ extension TimeStampListViewModel {
                 return timeStamp.type ?? .none
             },
             set: { [weak self] newValue in
-                guard var timeStamps = self?.repository.timeStamps.value else { return }
-                if let index = timeStamps.firstIndex(where: { $0.id == timeStamp.id} ) {
-                    self?.timeStamps[index].type = newValue
-                    if let newTimeStamp = self?.timeStamps[index] {
-                        self?.repository.edit(timeStamp: newTimeStamp)
-                    }
-                }
+                guard var timeStamps = self?.timeStamps,
+                      let index = timeStamps.firstIndex(where: { $0.id == timeStamp.id} ) else { return }
+                timeStamps[index].type = newValue
+                self?.repository.edit(timeStamp: timeStamps[index])
             }
         )
+    }
+}
+
+extension TimeStampListViewModel: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+    }
+    
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
+        guard let timeStamps = TimeStampCorder().decode(data: messageData),
+              let timeStamp = timeStamps.first else { return }
+        Task {
+            await MainActor.run {
+                self.edit(timeStamp: timeStamp)
+            }
+        }
     }
 }

@@ -12,13 +12,19 @@ struct TimeStampApp: App {
     private let repository = UserDefaultTimeStampRepository(userDefault: .standard)
     var body: some Scene {
         WindowGroup {
+            #if os(watchOS)
+            ContentView(viewModel: AddTimeStampViewModel())
+            #else
             ContentView(viewModel: TimeStampListViewModel(repository: repository))
+            #endif
         }
         
+        #if os(macOS)
         MenuBarExtra {
             AddTimeStampView(viewModel: AddTimeStampViewModel(repository: repository))
         } label: {
             Image(symbol: .timer)
         }
+        #endif
     }
 }
