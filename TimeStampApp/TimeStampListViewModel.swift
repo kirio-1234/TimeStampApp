@@ -103,8 +103,12 @@ extension TimeStampListViewModel: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
-        if let timeStamps = TimeStampCorder().decode(data: messageData), let timeStamp = timeStamps.first {
-            self.edit(timeStamp: timeStamp)
+        guard let timeStamps = TimeStampCorder().decode(data: messageData),
+              let timeStamp = timeStamps.first else { return }
+        Task {
+            await MainActor.run {
+                self.edit(timeStamp: timeStamp)
+            }
         }
     }
 }
