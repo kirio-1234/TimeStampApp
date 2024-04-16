@@ -10,8 +10,12 @@ import WatchConnectivity
 
 final class AddTimeStampViewModel: NSObject, ObservableObject {
     
+    private let session = WCSession.default
+    
     override init() {
         super.init()
+        
+        setupSession()
     }
     
     enum Action {
@@ -25,7 +29,18 @@ final class AddTimeStampViewModel: NSObject, ObservableObject {
         }
     }
     
+    private func setupSession() {
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
     private func edit(timeStamp: TimeStamp) {
+        guard let jsonData = TimeStampCorder().encode(timeStamps: [timeStamp]) else { return }
+        session.sendMessageData(jsonData, replyHandler: nil) { error in
+            print(error.localizedDescription)
+        }
     }
 }
 

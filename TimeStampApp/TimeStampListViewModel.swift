@@ -14,6 +14,7 @@ import WatchConnectivity
 final class TimeStampListViewModel: NSObject, ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     private let repository: UserDefaultTimeStampRepository
+    private let session = WCSession.default
     
     private var cancellables: Set<AnyCancellable> = .init()
     
@@ -21,6 +22,8 @@ final class TimeStampListViewModel: NSObject, ObservableObject {
         self.repository = repository
         
         super.init()
+        
+        setupSession()
         
         self.repository.timeStamps
             .sink { timeStamps in
@@ -64,6 +67,13 @@ final class TimeStampListViewModel: NSObject, ObservableObject {
     private func deleteAll() {
         repository.deleteAll()
     }
+    
+    private func setupSession() {
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
+    }
 }
 
 extension TimeStampListViewModel {
@@ -93,5 +103,11 @@ extension TimeStampListViewModel: WCSessionDelegate {
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
+    }
+    
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
+        if let timeStamps = TimeStampCorder().decode(data: messageData), let timeStamp = timeStamps.first {
+            self.edit(timeStamp: timeStamp)
+        }
     }
 }
