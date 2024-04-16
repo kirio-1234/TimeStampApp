@@ -83,13 +83,10 @@ extension TimeStampListViewModel {
                 return timeStamp.type ?? .none
             },
             set: { [weak self] newValue in
-                guard var timeStamps = self?.repository.timeStamps.value else { return }
-                if let index = timeStamps.firstIndex(where: { $0.id == timeStamp.id} ) {
-                    self?.timeStamps[index].type = newValue
-                    if let newTimeStamp = self?.timeStamps[index] {
-                        self?.repository.edit(timeStamp: newTimeStamp)
-                    }
-                }
+                guard var timeStamps = self?.timeStamps,
+                      let index = timeStamps.firstIndex(where: { $0.id == timeStamp.id} ) else { return }
+                timeStamps[index].type = newValue
+                self?.repository.edit(timeStamp: timeStamps[index])
             }
         )
     }
