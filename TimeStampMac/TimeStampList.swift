@@ -21,7 +21,9 @@ struct TimeStampList: View {
     var body: some View {
         VStack {
             HStack(spacing: 32) {
-                addTimeStampButton
+                AddTimeStampButton {
+                    viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
+                }
                 calculateTimeStampDurationButton
                 deleteAllButton
             }
@@ -35,15 +37,6 @@ struct TimeStampList: View {
                     }
                 }
         }
-    }
-    
-    var addTimeStampButton: some View {
-        Button {
-            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
-        } label: {
-            Image(symbol: .plus)
-        }
-        .buttonStyle(.bordered)
     }
     
     var calculateTimeStampDurationButton: some View {
