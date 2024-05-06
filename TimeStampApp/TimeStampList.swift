@@ -20,7 +20,9 @@ struct TimeStampList: View {
                     .navigationTitle("Time Stamp List")
                     .toolbar {
                         ToolbarItem(placement: .topBarLeading) {
-                            trashButton
+                            TrashTimeStampButton {
+                                isDeletedAll.toggle()
+                            }
                         }
                         ToolbarItem(placement: .topBarTrailing) {
                             editButton
@@ -63,14 +65,6 @@ struct TimeStampList: View {
         } label: {
             Text(editMode.isEditing ? "Done" : "Edit")
                 .bold()
-        }
-    }
-    
-    var trashButton: some View {
-        Button {
-            isDeletedAll.toggle()
-        } label: {
-            Image(symbol: .trash)
         }
     }
     
