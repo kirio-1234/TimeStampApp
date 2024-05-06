@@ -35,7 +35,10 @@ struct TimeStampList: View {
         }
         .listStyle(.insetGrouped)
         .overlay(alignment: .bottomTrailing) {
-            addTimeStampButton
+            AddTimeStampButton {
+                viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
+            }
+            .padding()
         }
         .onOpenURL { url in
             if url == URL(string: "com-time-stamp-app://") {
@@ -93,20 +96,5 @@ struct TimeStampList: View {
         } label: {
             Text("削除")
         }
-    }
-    
-    var addTimeStampButton: some View {
-        Button {
-            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
-        } label: {
-            Image(symbol: .plus)
-                .resizable()
-                .frame(width: 44, height: 44)
-                .foregroundStyle(.white)
-                .padding()
-                .background(Color.blue)
-                .clipShape(Circle())
-        }
-        .padding()
     }
 }
