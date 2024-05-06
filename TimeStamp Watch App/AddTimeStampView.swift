@@ -14,6 +14,7 @@ struct AddTimeStampView: View {
         AddTimeStampButton {
             viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
         }
+        .buttonStyle(.plain)
     }
 }
 
