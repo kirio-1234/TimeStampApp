@@ -29,7 +29,9 @@ struct TimeStampList: View {
                         }
                     }
                     .confirmationDialog("すべて削除しますか？", isPresented: $isDeletedAll) {
-                       deleteAllButton
+                        DeleteTimeStampButton {
+                            viewModel.runAction(.deleteAll)
+                        }
                     }
             }
         }
@@ -60,14 +62,6 @@ struct TimeStampList: View {
             }
         }
         .environment(\.editMode, self.$editMode)
-    }
-    
-    var deleteAllButton: some View {
-        Button(role: .destructive) {
-            viewModel.runAction(.deleteAll)
-        } label: {
-            Text("すべて削除")
-        }
     }
     
     func cell(timeStamp: TimeStamp) -> some View {
