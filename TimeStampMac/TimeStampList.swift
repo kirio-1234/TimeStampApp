@@ -9,7 +9,7 @@ import SwiftUI
 import SFUserFriendlySymbols
 
 struct TimeStampList: View {
-    @ObservedObject var viewModel: TimeStampListViewModel
+    @EnvironmentObject var viewModel: TimeStampListViewModel
     
     @State private var showTimeStampDuration = false
     

@@ -10,18 +10,22 @@ import SwiftUI
 @main
 struct TimeStampApp: App {
     private let repository = UserDefaultTimeStampRepository(userDefault: .standard)
+    
     var body: some Scene {
         WindowGroup {
             #if os(watchOS)
-            ContentView(viewModel: AddTimeStampViewModel())
+            ContentView()
+                .environmentObject(AddTimeStampViewModel())
             #else
-            ContentView(viewModel: TimeStampListViewModel(repository: repository))
+            ContentView()
+                .environmentObject(TimeStampListViewModel(repository: repository))
             #endif
         }
         
         #if os(macOS)
         MenuBarExtra {
-            AddTimeStampView(viewModel: AddTimeStampViewModel(repository: repository))
+            AddTimeStampView()
+                .environmentObject(AddTimeStampViewModel(repository: repository))
         } label: {
             Image(symbol: .timer)
         }

@@ -9,13 +9,9 @@ import SwiftUI
 import SFUserFriendlySymbols
 
 struct TimeStampList: View {
-    @ObservedObject var viewModel: TimeStampListViewModel
+    @EnvironmentObject var viewModel: TimeStampListViewModel
     @State private var isDeletedAll: Bool = false
     @State private var editMode: EditMode = .inactive
-    
-    init(viewModel: TimeStampListViewModel) {
-        self.viewModel = viewModel
-    }
     
     var body: some View {
         VStack {

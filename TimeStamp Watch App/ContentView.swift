@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: AddTimeStampViewModel
-    
-    init(viewModel: AddTimeStampViewModel) {
-        self.viewModel = viewModel
-    }
+    @EnvironmentObject var viewModel: AddTimeStampViewModel
     
     var body: some View {
-        AddTimeStampView(viewModel: viewModel)
+        AddTimeStampView()
+            .environmentObject(viewModel)
     }
 }
 
 #Preview {
-    ContentView(viewModel: AddTimeStampViewModel())
+    ContentView()
+        .environmentObject(AddTimeStampViewModel())
 }
