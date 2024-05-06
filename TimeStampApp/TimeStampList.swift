@@ -20,20 +20,27 @@ struct TimeStampList: View {
                     .navigationTitle("Time Stamp List")
                     .toolbar {
                         ToolbarItem(placement: .topBarLeading) {
-                            trashButton
+                            TrashTimeStampButton {
+                                isDeletedAll.toggle()
+                            }
                         }
                         ToolbarItem(placement: .topBarTrailing) {
-                            editButton
+                            EditTimeStampButton(editMode: self.$editMode)
                         }
                     }
                     .confirmationDialog("すべて削除しますか？", isPresented: $isDeletedAll) {
-                       deleteAllButton
+                        DeleteTimeStampButton {
+                            viewModel.runAction(.deleteAll)
+                        }
                     }
             }
         }
         .listStyle(.insetGrouped)
         .overlay(alignment: .bottomTrailing) {
-            addTimeStampButton
+            AddTimeStampButton {
+                viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
+            }
+            .padding()
         }
         .onOpenURL { url in
             if url == URL(string: "com-time-stamp-app://") {
@@ -57,31 +64,6 @@ struct TimeStampList: View {
         .environment(\.editMode, self.$editMode)
     }
     
-    var editButton: some View {
-        Button {
-            editMode = editMode.isEditing ? .inactive : .active
-        } label: {
-            Text(editMode.isEditing ? "Done" : "Edit")
-                .bold()
-        }
-    }
-    
-    var trashButton: some View {
-        Button {
-            isDeletedAll.toggle()
-        } label: {
-            Image(symbol: .trash)
-        }
-    }
-    
-    var deleteAllButton: some View {
-        Button(role: .destructive) {
-            viewModel.runAction(.deleteAll)
-        } label: {
-            Text("すべて削除")
-        }
-    }
-    
     func cell(timeStamp: TimeStamp) -> some View {
         Picker(timeStamp.date.yyyyMMDDEEEHHmm, selection: viewModel.bindingDateType(timeStamp: timeStamp)) {
             ForEach(TimeStamp.DateType.allCases, id: \.self) { type in
@@ -99,20 +81,5 @@ struct TimeStampList: View {
         } label: {
             Text("削除")
         }
-    }
-    
-    var addTimeStampButton: some View {
-        Button {
-            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
-        } label: {
-            Image(symbol: .plus)
-                .resizable()
-                .frame(width: 44, height: 44)
-                .foregroundStyle(.white)
-                .padding()
-                .background(Color.blue)
-                .clipShape(Circle())
-        }
-        .padding()
     }
 }

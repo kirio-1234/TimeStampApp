@@ -21,9 +21,13 @@ struct TimeStampList: View {
     var body: some View {
         VStack {
             HStack(spacing: 32) {
-                addTimeStampButton
+                AddTimeStampButton {
+                    viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
+                }
                 calculateTimeStampDurationButton
-                deleteAllButton
+                TrashTimeStampButton {
+                    viewModel.runAction(.deleteAll)
+                }
             }
             .padding()
             list
@@ -37,15 +41,6 @@ struct TimeStampList: View {
         }
     }
     
-    var addTimeStampButton: some View {
-        Button {
-            viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
-        } label: {
-            Image(symbol: .plus)
-        }
-        .buttonStyle(.bordered)
-    }
-    
     var calculateTimeStampDurationButton: some View {
         Button {
             viewModel.runAction(.calculateTimeStampDuration)
@@ -56,31 +51,20 @@ struct TimeStampList: View {
         .buttonStyle(.bordered)
     }
     
-    var deleteAllButton: some View {
-        Button {
-            viewModel.runAction(.deleteAll)
-        } label: {
-            Image(symbol: .trash)
-        }
-        .buttonStyle(.bordered)
-    }
-    
     var list: some View {
         List {
             ForEach(viewModel.timeStamps) { timeStamp in
                 cell(timeStamp: timeStamp)
+                    .onTapGesture {
+                        viewModel.runAction(.selectTimeStamp(timeStamp: timeStamp))
+                    }
             }
         }
     }
     
     func cell(timeStamp: TimeStamp) -> some View {
         HStack {
-            Button {
-                viewModel.runAction(.selectTimeStamp(timeStamp: timeStamp))
-            } label: {
-                Text(timeStamp.date.yyyyMMDDEEEHHmm)
-            }
-            .buttonStyle(.plain)
+            Text(timeStamp.date.yyyyMMDDEEEHHmm)
             
             Spacer()
             
