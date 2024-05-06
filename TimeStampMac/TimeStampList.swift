@@ -25,7 +25,9 @@ struct TimeStampList: View {
                     viewModel.runAction(.edit(timeStamp: .currentTimeStamp))
                 }
                 calculateTimeStampDurationButton
-                deleteAllButton
+                TrashTimeStampButton {
+                    viewModel.runAction(.deleteAll)
+                }
             }
             .padding()
             list
@@ -45,15 +47,6 @@ struct TimeStampList: View {
             showTimeStampDuration = true
         } label: {
             Image(symbol: .clock)
-        }
-        .buttonStyle(.bordered)
-    }
-    
-    var deleteAllButton: some View {
-        Button {
-            viewModel.runAction(.deleteAll)
-        } label: {
-            Image(symbol: .trash)
         }
         .buttonStyle(.bordered)
     }
