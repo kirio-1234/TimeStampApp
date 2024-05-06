@@ -25,7 +25,7 @@ struct TimeStampList: View {
                             }
                         }
                         ToolbarItem(placement: .topBarTrailing) {
-                            editButton
+                            EditTimeStampButton(editMode: self.$editMode)
                         }
                     }
                     .confirmationDialog("すべて削除しますか？", isPresented: $isDeletedAll) {
@@ -60,15 +60,6 @@ struct TimeStampList: View {
             }
         }
         .environment(\.editMode, self.$editMode)
-    }
-    
-    var editButton: some View {
-        Button {
-            editMode = editMode.isEditing ? .inactive : .active
-        } label: {
-            Text(editMode.isEditing ? "Done" : "Edit")
-                .bold()
-        }
     }
     
     var deleteAllButton: some View {
