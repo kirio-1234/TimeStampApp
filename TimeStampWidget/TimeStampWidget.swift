@@ -51,15 +51,10 @@ struct TimeStampWidgetEntryView : View {
 
 struct TimeStampWidgetView: View {
     var body: some View {
-        Image(symbol: .plus)
-            .resizable()
-            .scaledToFit()
-            .padding()
-            .foregroundStyle(.white)
-            .padding()
-            .background(Color.blue)
-            .clipShape(Circle())
-            .widgetURL(URL(string: "com-time-stamp-app://"))
+        AddTimeStampButton {
+        }
+        .buttonStyle(.plain)
+        .widgetURL(URL(string: "com-time-stamp-app://"))
     }
 }
 
