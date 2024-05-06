@@ -11,6 +11,7 @@ import Foundation
     let id: UUID
     let date: Date
     var type: DateType? = nil
+    var isSelected = false
     
     init(id: UUID, date: Date, type: DateType? = nil) {
         self.id = id
