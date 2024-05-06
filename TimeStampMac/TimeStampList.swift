@@ -55,18 +55,16 @@ struct TimeStampList: View {
         List {
             ForEach(viewModel.timeStamps) { timeStamp in
                 cell(timeStamp: timeStamp)
+                    .onTapGesture {
+                        viewModel.runAction(.selectTimeStamp(timeStamp: timeStamp))
+                    }
             }
         }
     }
     
     func cell(timeStamp: TimeStamp) -> some View {
         HStack {
-            Button {
-                viewModel.runAction(.selectTimeStamp(timeStamp: timeStamp))
-            } label: {
-                Text(timeStamp.date.yyyyMMDDEEEHHmm)
-            }
-            .buttonStyle(.plain)
+            Text(timeStamp.date.yyyyMMDDEEEHHmm)
             
             Spacer()
             
