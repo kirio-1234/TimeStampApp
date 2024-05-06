@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct AddTimeStampView: View {
-    @ObservedObject var viewModel: AddTimeStampViewModel
-    
-    init(viewModel: AddTimeStampViewModel) {
-        self.viewModel = viewModel
-    }
+    @EnvironmentObject var viewModel: AddTimeStampViewModel
     
     var body: some View {
         AddTimeStampButton {
@@ -22,5 +18,6 @@ struct AddTimeStampView: View {
 }
 
 #Preview {
-    AddTimeStampView(viewModel: AddTimeStampViewModel(repository: UserDefaultTimeStampRepository(userDefault: .standard)))
+    AddTimeStampView()
+        .environmentObject(AddTimeStampViewModel(repository: UserDefaultTimeStampRepository(userDefault: .standard)))
 }
