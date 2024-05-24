@@ -10,7 +10,6 @@ import SwiftUI
 import Combine
 import WatchConnectivity
 
-@MainActor
 final class TimeStampListViewModel: NSObject, ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     private let repository: TimeStampRepository
