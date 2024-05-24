@@ -8,9 +8,9 @@
 import Foundation
 
 final class AddTimeStampViewModel: ObservableObject {
-    private let repository: UserDefaultTimeStampRepository
+    private let repository: TimeStampRepository
     
-    init(repository: UserDefaultTimeStampRepository) {
+    init(repository: TimeStampRepository) {
         self.repository = repository
     }
     

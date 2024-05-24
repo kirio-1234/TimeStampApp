@@ -10,15 +10,14 @@ import SwiftUI
 import Combine
 import WatchConnectivity
 
-@MainActor
 final class TimeStampListViewModel: NSObject, ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
-    private let repository: UserDefaultTimeStampRepository
+    private let repository: TimeStampRepository
     private let session = WCSession.default
     
     private var cancellables: Set<AnyCancellable> = .init()
     
-    init(repository: UserDefaultTimeStampRepository) {
+    init(repository: TimeStampRepository) {
         self.repository = repository
         
         super.init()

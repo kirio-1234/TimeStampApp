@@ -65,6 +65,28 @@
 		6D824F902BC965560054B1D1 /* AddTimeStampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F872BC964C20054B1D1 /* AddTimeStampViewModel.swift */; };
 		6D824F912BC9659F0054B1D1 /* AddTimeStampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F892BC964D30054B1D1 /* AddTimeStampView.swift */; };
 		6D824F922BC9661A0054B1D1 /* AddTimeStampButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687C82BBF037000F4A9FB /* AddTimeStampButton.swift */; };
+		6DCA27542C00380A00F5F770 /* TimeStampApp_TimeStampListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA27532C00380A00F5F770 /* TimeStampApp_TimeStampListViewModelTests.swift */; };
+		6DCA27612C00382B00F5F770 /* TimeStampMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA27602C00382B00F5F770 /* TimeStampMacTests.swift */; };
+		6DCA276E2C00384200F5F770 /* TimeStamp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA276D2C00384200F5F770 /* TimeStamp_Watch_AppTests.swift */; };
+		6DCA27742C00388900F5F770 /* InMemoryTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */; };
+		6DCA27752C00388A00F5F770 /* InMemoryTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */; };
+		6DCA27762C00388A00F5F770 /* InMemoryTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */; };
+		6DCA27772C00388D00F5F770 /* UserDefaultTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */; };
+		6DCA27782C00388E00F5F770 /* UserDefaultTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */; };
+		6DCA27792C00388E00F5F770 /* UserDefaultTimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F5A2BC92FE80054B1D1 /* UserDefaultTimeStampRepository.swift */; };
+		6DCA277A2C00389400F5F770 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */; };
+		6DCA277B2C00389400F5F770 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */; };
+		6DCA277C2C00389400F5F770 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46878E2BBEFB3200F4A9FB /* TimeStamp.swift */; };
+		6DCA277D2C00389700F5F770 /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
+		6DCA277E2C00389700F5F770 /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
+		6DCA277F2C00389800F5F770 /* TimeStampRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687932BBEFB6200F4A9FB /* TimeStampRepository.swift */; };
+		6DCA27802C00389C00F5F770 /* TimeStampListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E08C2B484E3100351D0B /* TimeStampListViewModel.swift */; };
+		6DCA27812C00389F00F5F770 /* TimeStampListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40F7672B6BE25C00D03D23 /* TimeStampListViewModel.swift */; };
+		6DCA27822C0038A600F5F770 /* AddTimeStampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F872BC964C20054B1D1 /* AddTimeStampViewModel.swift */; };
+		6DCA27832C0038B500F5F770 /* AddTimeStampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4687D32BBF063D00F4A9FB /* AddTimeStampViewModel.swift */; };
+		6DCA27842C0038DF00F5F770 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
+		6DCA27852C0038DF00F5F770 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
+		6DCA27862C0038E000F5F770 /* TimeStampCorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D824F552BC92F200054B1D1 /* TimeStampCorder.swift */; };
 		6DD6E07D2B484B6E00351D0B /* TimeStampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */; };
 		6DD6E07F2B484B6E00351D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6E07E2B484B6E00351D0B /* ContentView.swift */; };
 		6DD6E0812B484B8200351D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6E0802B484B8200351D0B /* Assets.xcassets */; };
@@ -82,6 +104,27 @@
 			remoteInfo = TimeStampWidgetExtension;
 		};
 		6D4687BE2BBF02F000F4A9FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD6E0712B484B6E00351D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D4687B22BBF02EC00F4A9FB;
+			remoteInfo = "TimeStamp Watch App";
+		};
+		6DCA27552C00380A00F5F770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD6E0712B484B6E00351D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD6E0782B484B6E00351D0B;
+			remoteInfo = TimeStampApp;
+		};
+		6DCA27622C00382B00F5F770 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD6E0712B484B6E00351D0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D40F7552B6BDC1400D03D23;
+			remoteInfo = TimeStampMac;
+		};
+		6DCA276F2C00384200F5F770 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DD6E0712B484B6E00351D0B /* Project object */;
 			proxyType = 1;
@@ -152,6 +195,12 @@
 		6D824F612BC94F4A0054B1D1 /* InMemoryTimeStampRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTimeStampRepository.swift; sourceTree = "<group>"; };
 		6D824F872BC964C20054B1D1 /* AddTimeStampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeStampViewModel.swift; sourceTree = "<group>"; };
 		6D824F892BC964D30054B1D1 /* AddTimeStampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeStampView.swift; sourceTree = "<group>"; };
+		6DCA27512C00380A00F5F770 /* TimeStampAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStampAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCA27532C00380A00F5F770 /* TimeStampApp_TimeStampListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp_TimeStampListViewModelTests.swift; sourceTree = "<group>"; };
+		6DCA275E2C00382A00F5F770 /* TimeStampMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeStampMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCA27602C00382B00F5F770 /* TimeStampMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampMacTests.swift; sourceTree = "<group>"; };
+		6DCA276B2C00384200F5F770 /* TimeStamp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TimeStamp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCA276D2C00384200F5F770 /* TimeStamp_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp_Watch_AppTests.swift; sourceTree = "<group>"; };
 		6DD6E0792B484B6E00351D0B /* TimeStampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeStampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD6E07C2B484B6E00351D0B /* TimeStampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampApp.swift; sourceTree = "<group>"; };
 		6DD6E07E2B484B6E00351D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +234,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4687D22BBF053E00F4A9FB /* SFUserFriendlySymbols in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA274E2C00380A00F5F770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA275B2C00382A00F5F770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA27682C00384200F5F770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +397,30 @@
 			path = AddTimeStampView;
 			sourceTree = "<group>";
 		};
+		6DCA27522C00380A00F5F770 /* TimeStampAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA27532C00380A00F5F770 /* TimeStampApp_TimeStampListViewModelTests.swift */,
+			);
+			path = TimeStampAppTests;
+			sourceTree = "<group>";
+		};
+		6DCA275F2C00382B00F5F770 /* TimeStampMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA27602C00382B00F5F770 /* TimeStampMacTests.swift */,
+			);
+			path = TimeStampMacTests;
+			sourceTree = "<group>";
+		};
+		6DCA276C2C00384200F5F770 /* TimeStamp Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA276D2C00384200F5F770 /* TimeStamp_Watch_AppTests.swift */,
+			);
+			path = "TimeStamp Watch AppTests";
+			sourceTree = "<group>";
+		};
 		6DD6E0702B484B6E00351D0B = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +428,9 @@
 				6D2142802B49132700D38436 /* TimeStampWidget */,
 				6D40F7572B6BDC1500D03D23 /* TimeStampMac */,
 				6D4687B42BBF02EC00F4A9FB /* TimeStamp Watch App */,
+				6DCA27522C00380A00F5F770 /* TimeStampAppTests */,
+				6DCA275F2C00382B00F5F770 /* TimeStampMacTests */,
+				6DCA276C2C00384200F5F770 /* TimeStamp Watch AppTests */,
 				6D21427B2B49132700D38436 /* Frameworks */,
 				6DD6E07A2B484B6E00351D0B /* Products */,
 			);
@@ -346,6 +443,9 @@
 				6D21427A2B49132700D38436 /* TimeStampWidgetExtension.appex */,
 				6D40F7562B6BDC1400D03D23 /* TimeStampMac.app */,
 				6D4687B32BBF02EC00F4A9FB /* TimeStamp Watch App.app */,
+				6DCA27512C00380A00F5F770 /* TimeStampAppTests.xctest */,
+				6DCA275E2C00382A00F5F770 /* TimeStampMacTests.xctest */,
+				6DCA276B2C00384200F5F770 /* TimeStamp Watch AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -439,6 +539,60 @@
 			productReference = 6D4687B32BBF02EC00F4A9FB /* TimeStamp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6DCA27502C00380A00F5F770 /* TimeStampAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCA27592C00380A00F5F770 /* Build configuration list for PBXNativeTarget "TimeStampAppTests" */;
+			buildPhases = (
+				6DCA274D2C00380A00F5F770 /* Sources */,
+				6DCA274E2C00380A00F5F770 /* Frameworks */,
+				6DCA274F2C00380A00F5F770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DCA27562C00380A00F5F770 /* PBXTargetDependency */,
+			);
+			name = TimeStampAppTests;
+			productName = TimeStampAppTests;
+			productReference = 6DCA27512C00380A00F5F770 /* TimeStampAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DCA275D2C00382A00F5F770 /* TimeStampMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCA27642C00382B00F5F770 /* Build configuration list for PBXNativeTarget "TimeStampMacTests" */;
+			buildPhases = (
+				6DCA275A2C00382A00F5F770 /* Sources */,
+				6DCA275B2C00382A00F5F770 /* Frameworks */,
+				6DCA275C2C00382A00F5F770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DCA27632C00382B00F5F770 /* PBXTargetDependency */,
+			);
+			name = TimeStampMacTests;
+			productName = TimeStampMacTests;
+			productReference = 6DCA275E2C00382A00F5F770 /* TimeStampMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DCA276A2C00384200F5F770 /* TimeStamp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCA27712C00384200F5F770 /* Build configuration list for PBXNativeTarget "TimeStamp Watch AppTests" */;
+			buildPhases = (
+				6DCA27672C00384200F5F770 /* Sources */,
+				6DCA27682C00384200F5F770 /* Frameworks */,
+				6DCA27692C00384200F5F770 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DCA27702C00384200F5F770 /* PBXTargetDependency */,
+			);
+			name = "TimeStamp Watch AppTests";
+			productName = "TimeStamp Watch AppTests";
+			productReference = 6DCA276B2C00384200F5F770 /* TimeStamp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6DD6E0782B484B6E00351D0B /* TimeStampApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD6E0872B484B8200351D0B /* Build configuration list for PBXNativeTarget "TimeStampApp" */;
@@ -482,6 +636,18 @@
 					6D4687B22BBF02EC00F4A9FB = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					6DCA27502C00380A00F5F770 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 6DD6E0782B484B6E00351D0B;
+					};
+					6DCA275D2C00382A00F5F770 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 6D40F7552B6BDC1400D03D23;
+					};
+					6DCA276A2C00384200F5F770 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 6D4687B22BBF02EC00F4A9FB;
+					};
 					6DD6E0782B484B6E00351D0B = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -507,6 +673,9 @@
 				6D2142792B49132700D38436 /* TimeStampWidgetExtension */,
 				6D40F7552B6BDC1400D03D23 /* TimeStampMac */,
 				6D4687B22BBF02EC00F4A9FB /* TimeStamp Watch App */,
+				6DCA27502C00380A00F5F770 /* TimeStampAppTests */,
+				6DCA275D2C00382A00F5F770 /* TimeStampMacTests */,
+				6DCA276A2C00384200F5F770 /* TimeStamp Watch AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -535,6 +704,27 @@
 			files = (
 				6D4687BD2BBF02F000F4A9FB /* Preview Assets.xcassets in Resources */,
 				6D4687BA2BBF02F000F4A9FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA274F2C00380A00F5F770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA275C2C00382A00F5F770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA27692C00384200F5F770 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +794,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DCA274D2C00380A00F5F770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCA27772C00388D00F5F770 /* UserDefaultTimeStampRepository.swift in Sources */,
+				6DCA27742C00388900F5F770 /* InMemoryTimeStampRepository.swift in Sources */,
+				6DCA277A2C00389400F5F770 /* TimeStamp.swift in Sources */,
+				6DCA27802C00389C00F5F770 /* TimeStampListViewModel.swift in Sources */,
+				6DCA27542C00380A00F5F770 /* TimeStampApp_TimeStampListViewModelTests.swift in Sources */,
+				6DCA27842C0038DF00F5F770 /* TimeStampCorder.swift in Sources */,
+				6DCA277D2C00389700F5F770 /* TimeStampRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA275A2C00382A00F5F770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCA27782C00388E00F5F770 /* UserDefaultTimeStampRepository.swift in Sources */,
+				6DCA27752C00388A00F5F770 /* InMemoryTimeStampRepository.swift in Sources */,
+				6DCA277B2C00389400F5F770 /* TimeStamp.swift in Sources */,
+				6DCA27852C0038DF00F5F770 /* TimeStampCorder.swift in Sources */,
+				6DCA27822C0038A600F5F770 /* AddTimeStampViewModel.swift in Sources */,
+				6DCA27812C00389F00F5F770 /* TimeStampListViewModel.swift in Sources */,
+				6DCA27612C00382B00F5F770 /* TimeStampMacTests.swift in Sources */,
+				6DCA277E2C00389700F5F770 /* TimeStampRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCA27672C00384200F5F770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCA27792C00388E00F5F770 /* UserDefaultTimeStampRepository.swift in Sources */,
+				6DCA27762C00388A00F5F770 /* InMemoryTimeStampRepository.swift in Sources */,
+				6DCA277C2C00389400F5F770 /* TimeStamp.swift in Sources */,
+				6DCA276E2C00384200F5F770 /* TimeStamp_Watch_AppTests.swift in Sources */,
+				6DCA277F2C00389800F5F770 /* TimeStampRepository.swift in Sources */,
+				6DCA27862C0038E000F5F770 /* TimeStampCorder.swift in Sources */,
+				6DCA27832C0038B500F5F770 /* AddTimeStampViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DD6E0752B484B6E00351D0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -639,6 +872,21 @@
 			isa = PBXTargetDependency;
 			target = 6D4687B22BBF02EC00F4A9FB /* TimeStamp Watch App */;
 			targetProxy = 6D4687BE2BBF02F000F4A9FB /* PBXContainerItemProxy */;
+		};
+		6DCA27562C00380A00F5F770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD6E0782B484B6E00351D0B /* TimeStampApp */;
+			targetProxy = 6DCA27552C00380A00F5F770 /* PBXContainerItemProxy */;
+		};
+		6DCA27632C00382B00F5F770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D40F7552B6BDC1400D03D23 /* TimeStampMac */;
+			targetProxy = 6DCA27622C00382B00F5F770 /* PBXContainerItemProxy */;
+		};
+		6DCA27702C00384200F5F770 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D4687B22BBF02EC00F4A9FB /* TimeStamp Watch App */;
+			targetProxy = 6DCA276F2C00384200F5F770 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -819,6 +1067,122 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		6DCA27572C00380A00F5F770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeStampApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeStampApp";
+			};
+			name = Debug;
+		};
+		6DCA27582C00380A00F5F770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeStampApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeStampApp";
+			};
+			name = Release;
+		};
+		6DCA27652C00382B00F5F770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeStampMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeStampMac";
+			};
+			name = Debug;
+		};
+		6DCA27662C00382B00F5F770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TimeStampMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeStampMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeStampMac";
+			};
+			name = Release;
+		};
+		6DCA27722C00384200F5F770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TimeStamp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeStamp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeStamp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		6DCA27732C00384200F5F770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWFVL33D55;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TimeStamp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeStamp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeStamp Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
@@ -1034,6 +1398,33 @@
 			buildConfigurations = (
 				6D4687C22BBF02F000F4A9FB /* Debug */,
 				6D4687C32BBF02F000F4A9FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCA27592C00380A00F5F770 /* Build configuration list for PBXNativeTarget "TimeStampAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCA27572C00380A00F5F770 /* Debug */,
+				6DCA27582C00380A00F5F770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCA27642C00382B00F5F770 /* Build configuration list for PBXNativeTarget "TimeStampMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCA27652C00382B00F5F770 /* Debug */,
+				6DCA27662C00382B00F5F770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCA27712C00384200F5F770 /* Build configuration list for PBXNativeTarget "TimeStamp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCA27722C00384200F5F770 /* Debug */,
+				6DCA27732C00384200F5F770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
