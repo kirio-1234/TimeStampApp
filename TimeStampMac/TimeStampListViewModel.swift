@@ -12,10 +12,10 @@ import Combine
 final class TimeStampListViewModel: ObservableObject {
     @Published var timeStamps: [TimeStamp] = []
     @Published var duration: Int? = nil
-    private let repository: UserDefaultTimeStampRepository
+    private let repository: TimeStampRepository
     private var cancellables: Set<AnyCancellable> = .init()
     
-    init(repository: UserDefaultTimeStampRepository) {
+    init(repository: TimeStampRepository) {
         self.repository = repository
         
         self.repository.timeStamps

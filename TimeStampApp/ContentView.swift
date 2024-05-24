@@ -19,5 +19,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environmentObject(TimeStampListViewModel(repository: .init(userDefault: .standard)))
+        .environmentObject(TimeStampListViewModel(repository: InMemoryTimeStampRepository()))
 }
