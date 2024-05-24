@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Combine
 
 protocol TimeStampRepository {
+    var timeStamps: CurrentValueSubject<[TimeStamp]?, Never> { get }
     func edit(timeStamp: TimeStamp)
     func delete(id: TimeStamp.ID)
     func delete(offsets: IndexSet)
